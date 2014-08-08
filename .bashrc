@@ -106,6 +106,12 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
+    . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+fi
+
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+
 # Bash completion
 if [ -f /etc/bash_completion ]; then
 . /etc/bash_completion
